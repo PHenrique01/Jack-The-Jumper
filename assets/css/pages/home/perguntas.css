@@ -1,0 +1,55 @@
+.perguntas-bg{
+    background-color: var(--color-p2);
+}
+
+.perguntas{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.perguntas dl > div{
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.perguntas dl > div:nth-child(odd){
+    background-color: var(--color-p3);
+}
+
+.perguntas button{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    font-size: 1.45rem;
+    gap: 8px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+}
+
+.perguntas dd{
+    display: none;
+    font-size: 1rem;
+    padding-left: 20px;
+    padding-top: 16px;
+    max-width: 80ch;
+}
+
+.perguntas dd.ativa{
+    display: block;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 800px){
+    .perguntas{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+    .perguntas h2{
+        margin-bottom: 40px;
+    }
+}

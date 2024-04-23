@@ -1,0 +1,40 @@
+.footer-bg{
+    background-color: var(--color-p2);
+    position: relative;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.footer::after{
+    content: "";
+    background-color: var(--color-w);
+    position: absolute;
+    width: 750px;
+    height: 4px;
+    bottom: 50px;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-links a{
+    color: var(--color-w);
+    font-size: 1rem;
+}
+
+.copy{
+    display: flex;
+    justify-content: center;
+}
+
+.copy span{
+    color: var(--color-w);
+}

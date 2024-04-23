@@ -1,0 +1,17 @@
+/* CSS - GLOBAL */
+
+@import url("./global/global.css");
+@import url("./global/header.css");
+@import url("./global/footer.css");
+
+/* CSS - UTIL */
+
+@import url("./util/cores.css");
+@import url("./util/tipografia.css");
+@import url("./util/animacao.css");
+
+/* CSS - PAGES */
+
+@import url("./pages/home/introducao.css");
+@import url("./pages/home/sobre.css");
+@import url("./pages/home/perguntas.css");
