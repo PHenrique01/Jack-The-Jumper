@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descrição do jogo">
+    <meta name="description" content="Jack The Jumper, é um jogo que está sendo desenvolvido por Matheus Pedrosa e Paulo Henrique pra disciplina sistema de multimídia.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/imgs/icone/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Jack The Jumper</title>
 </head>
@@ -11,126 +16,171 @@
     <!-- Header Content Start -->
     <header class="header-bg" aria-label="Header">
         <div class="header container">
-            <span class="logo color-w">Jack The<span class="color-a3"> Jumper</span></span>
+            <img class="header-img" src="./assets/imgs/logo-marca.svg" alt="Logo marca" width="191" height="98">
             <nav aria-label="Menu">
-                <ul class="header-menu color-w">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#perguntas">Perguntas</a></li>
+                <ul class="header-menu cor-1 font-p1-m">
+                    <li><a href="#historia-jogo">História do jogo</a></li>
+                    <li><a href="#personagens-jogo">Personagens do jogo</a></li>
+                    <li><a href="#perguntas-jogo">Dúvidas do jogo</a></li>
                 </ul>
             </nav>
+        </div>
+        <div class="header-info container">
+            <h1 class="cor-1 font-g1-sb">O menino saltador</h1>
+            <p class="font-p2-r cor-1">
+                Jack The Jumper, é um jogo que está sendo desenvolvido por <a href="#" target="_blank" rel="external">@Matheus Pedrosa</a> e <a href="#" target="_blank" rel="external">@Paulo Henrique</a> pra disciplina sistema de multimídia.
+            </p>
+            <div class="btns cor-1">
+                <a href="https://github.com/PHenrique01/Jack-The-Jumper" target="_blank" rel="external" class="btn">Repositório do site</a>
+                <a href="https://github.com/matheuspedrosam/Jack-The-Jumper/tree/master" target="_blank" rel="external" class="btn">Repositório do jogo</a>
+            </div>
+            <div class="scroll-animado">
+                <a href="#conteudo">
+                    <span class="font-p3-r cor-1">Scroll down</span>
+                    <img src="./assets/imgs/icone/seta-bottom.svg" alt="" width="14" height="8">
+                    <img src="./assets/imgs/icone/seta-bottom.svg" alt="" width="14" height="8">
+                    <img src="./assets/imgs/icone/seta-bottom.svg" alt="" width="14" height="8">
+                </a>
+            </div>
         </div>
     </header>
     <!-- Header Content End -->
     <!-- Main Content Start -->
-    <main aria-label="Conteudo">
-        <section class="introducao-bg" aria-label="Introdução">
+    <main id="conteudo" aria-label="Conteudo">
+        <section class="bg-4 fechar" aria-label="Introdução">
             <div class="introducao container">
-                <div class="introducao-desc">
-                    <span class="logo color-p2 fadeInDown" data-anime="200">Jack The<span class="color-a1"> Jumper</span></span>
-                    <h1 class="color-p2 fadeInDown" data-anime="400">O menino<span class="color-a1"> saltador</span></h1>
-                    <p class="color-p2 fadeInDown" data-anime="600">Jack The Jumper, é um jogo que está sendo desenvolvido por <a href="https://github.com/matheuspedrosam" target="_blank" rel="external"><strong>@Matheus Pedrosa</strong></a> e <a href="https://github.com/PHenrique01" target="_blank" rel="external"><strong>@Paulo Henrique</strong></a> pra disciplina sistema de multimídia.</p>
-                    <a href="https://github.com/matheuspedrosam/Jack-The-Jumper/tree/master" target="_blank" rel="external" class="btn fadeInDown" data-anime="800">Ver repositório do github</a>
+                <h2 class="cor-1 font-g1-sb">Jack The Jumper</h2>
+                <div class="introducao-info">
+                    <div class="introducao-info-img">
+                        <img src="./assets/imgs/dec-personagem/personagem.jpg" alt="Imagem do personagem" width="560" height="500">
+                    </div>
+                    <div class="introducao-desc">
+                        <h3 class="cor-1 font-m1-sb">Sobre a gameplay</h3>
+                        <p class="cor-1 font-p4-r">
+                            Jack The Jumper, é um jogo no formato 2d onde o personagem principal se chama jack e pode se mover no eixo x e y. E a cada vez que ele vai subindo a câmera irá subindo junto com ele, caso ele caia ou sofra dano do dragão, ele perde uma vida de um total de 3 vidas, e retornará de seu último checkpoint. Após perder as 3 vidas será um game over.
+                            <br>
+                            <br>
+                            <span class="cor-1 font-p4-r">Jack The Jumper é um projeto da faculdade.</span>
+                        </p>
+                        <div class="btns cor-1">
+                            <a href="#" target="_blank" rel="external" class="btn">Baixar jogo</a>
+                            <a href="#" target="_blank" rel="external" class="btn">Mais informação</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <iframe width="1160" height="500" src="https://www.youtube.com/embed/6d2hPhPXn8w?si=XhB9EUVQptQ0hxVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
-        <section class="sobre container margin-top" id="sobre" aria-label="Sobre o jogo">
-            <h2 class="secao-titulo color-p3">Sobre o jogo</h2>
-            <div class="sobre-conteudo">
-                <div class="sobre-video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6d2hPhPXn8w?si=2pFCWidGx72pf2KO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="sobre-desc">
-                    <h3>Jack The Jumper</h3>
-                    <p>
+        <section class="historia container fechar" id="historia-jogo" aria-label="História do jogo">
+            <h2 class="cor-4 font-g1-sb">História do jogo</h2>
+            <div class="historia-info">
+                <div class="historia-desc">
+                    <p class="cor-4 font-p4-r">
                         Era uma vez um menino chamado João que vivia com sua mãe em uma casa humilde. Eles tinham poucos recursos e estavam passando fome.
                         <br>
                         <br>
                         Certo dia João saiu em busca de alimentos na floresta, então acabou se deparando com uma caixa brilhante e ao abrir ele encontrou sementes mágicas douradas, então instantaneamente decidiu retornar para a casa e informar sua mãe.
                         <br>
                         <br>
-                        Logo sua mãe sugeriu que João vende-se para comprar alimentos, João não gostou muito da ideia e decidiu plantar um pouco longe de casa as escondidas, e ao retornar para casa sem alimento sua mãe brigou com ele e o deixou de castigo. Só que João foi teimoso e foi para o local onde havia plantado. 
+                        Logo sua mãe sugeriu que João vende-se para comprar alimentos, João não gostou muito da ideia e decidiu plantar um pouco longe de casa as escondidas, e ao retornar para casa sem alimento sua mãe brigou com ele e o deixou de castigo. Só que João foi teimoso e foi para o local onde havia plantado.
                         <br>
                         <br>
-                        Ele percebeu que havia crescido um enorme pé de algum fruto mágico misterioso. Contente com isso João decide escalar o pé... Então embarque nessa jornada com João para saber oque há por vir! MAS Algo me diz que essa jornada não será fácil! 
+                        Ele percebeu que havia crescido um enorme pé de algum fruto mágico misterioso. Contente com isso João decide escalar o pé... Então embarque nessa jornada com João para saber oque há por vir! MAS Algo me diz que essa jornada não será fácil!
                     </p>
                 </div>
-            </div>
-            <div class="sobre-personagens">
-                <div class="personagem">
-                    <div class="personagem-img">
-                        <img src="assets/imgs/personagem-jack.webp" alt="Imagem do personagem">
+                <div class="historia-trailer">
+                    <div class="trailer">
+                        <iframe width="1160" height="500" src="https://www.youtube.com/embed/6d2hPhPXn8w?si=XhB9EUVQptQ0hxVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
-                    <div class="personagem-desc">
-                        <h3>Jack</h3>
-                        <p>
-                            Um menino humilde, inteligente e persistente.
-                        </p>
-                    </div>
-                </div>
-                <div class="personagem">
-                    <div class="personagem-img">
-                        <img src="./assets/imgs/personagem-mae.webp" alt="Imagem do personagem">
-                    </div>
-                    <div class="personagem-desc">
-                        <h3>Maria</h3>
-                        <p>
-                            Mãe humilde de jack e batalhadora. 
-                        </p>
-                    </div>
-                </div>
-                <div class="personagem">
-                    <div class="personagem-img">
-                        <img src="./assets/imgs/personagem-vilao.webp" alt="Imagem do personagem">
-                    </div>
-                    <div class="personagem-desc">
-                        <h3>Dragão</h3>
-                        <p>
-                            "O Guardião" da caverna mágica.
+                    <div class="historia-trailer-desc">
+                        <h3 class="cor-4 font-m1-sb">Sinopse</h3>
+                        <p class="cor-4 font-p4-r">
+                            Um menino humilde que após encontrar uma caixa com sementes mágicas douradas, acaba se aventurando.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="perguntas-bg margin-top" id="perguntas" aria-label="Perguntas referente ao jogo">
-            <div class="perguntas container">
-                <h2 class="secao-titulo color-w">Perguntas sobre o jogo</h2>
-                <div class="perguntas-conteudo">
-                    <dl>
-                        <div class="pergunta">
-                            <dt><button class="color-w" aria-controls="pergunta1" aria-expanded="true">O jogo será gratuito?</button></dt>
-                            <dd id="pergunta1" class="color-w ativa">Sim, o jogo será totalmente gratuito.</dd>
+        <section class="personagens-bg fechar" id="personagens-jogo" aria-label="Personagens do jogo">
+            <div class="personagens container">
+                <h2 class="cor-1 font-g1-sb">Personagens do jogo</h2>
+                <div class="personagens-list">
+                    <div class="personagem">
+                        <div class="personagem-img">
+                            <img src="./assets/imgs/personagens/personagem-jack.jpg" alt="Imagem do personagem" width="360" height="360">
                         </div>
-                        <div class="pergunta">
-                            <dt><button class="color-w" aria-controls="pergunta2" aria-expanded="false">Quando será lançado o jogo?</button></dt>
-                            <dd id="pergunta2" class="color-w">No final do primeiro semestre desse ano.</dd>
+                        <div class="personagem-desc">
+                            <h4 class="cor-1 font-m1-sb">Jack</h4>
+                            <p class="cor-1 font-p4-r">
+                                Menino sonhador e aventureiro, e o seu sonho é mudar a vida de sua família para melhor.
+                            </p>
                         </div>
-                        <div class="pergunta">
-                            <dt><button class="color-w" aria-controls="pergunta3" aria-expanded="false">O jogo será pesado?</button></dt>
-                            <dd id="pergunta3" class="color-w">Não, o jogo será leve e irá rodar em qualquer pc.</dd>
+                    </div>
+                    <div class="personagem">
+                        <div class="personagem-img">
+                            <img src="./assets/imgs/personagens/personagem-mae.jpg" alt="Imagem do personagem" width="360" height="360">
                         </div>
-                        <div class="pergunta">
-                            <dt><button class="color-w" aria-controls="pergunta4" aria-expanded="false">Precisa de internet para jogar esse jogo?</button></dt>
-                            <dd id="pergunta4" class="color-w">Não, esse jogo não irá precisa de internet pra rodar.</dd>
+                        <div class="personagem-desc">
+                            <h4 class="cor-1 font-m1-sb">Maria</h4>
+                            <p class="cor-1 font-p4-r">
+                                Mãe humilde de jack e quer o melhor do seu filho.
+                            </p>
                         </div>
-                    </dl>
+                    </div>
+                    <div class="personagem">
+                        <div class="personagem-img">
+                            <img src="./assets/imgs/personagens/personagem-vilao.jpg" alt="Imagem do personagem" width="360" height="360">
+                        </div>
+                        <div class="personagem-desc">
+                            <h4 class="cor-1 font-m1-sb">Dragão</h4>
+                            <p class="cor-1 font-p4-r">
+                                “O Guardião” da caverna mágica que põem ovos dourados mágicos dourados.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <section class="perguntas container fechar" id="perguntas-jogo" aria-label="Perguntas do jogo">
+            <h2 class="cor-4 font-g1-sb">Dúvidas do jogo</h2>
+            <div class="perguntas-list">
+                <dl>
+                    <div class="pergunta">
+                        <dt><button class="cor-4 font-p5-sb" aria-controls="pergunta1" aria-expanded="true">O jogo será gratuito?</button></dt>
+                        <dd class="cor-4 font-p4-r ativa" id="pergunta1">Sim, o jogo será totalmente gratuito.</dd>
+                    </div>
+                    <div class="pergunta">
+                        <dt><button class="cor-4 font-p5-sb" aria-controls="pergunta2" aria-expanded="false">Quando será lançado o jogo?</button></dt>
+                        <dd class="cor-4 font-p4-r" id="pergunta2">No final do primeiro semestre desse ano.</dd>
+                    </div>
+                    <div class="pergunta">
+                        <dt><button class="cor-4 font-p5-sb" aria-controls="pergunta3" aria-expanded="false">O jogo será pesado?</button></dt>
+                        <dd class="cor-4 font-p4-r" id="pergunta3">Não, o jogo será leve e irá rodar em qualquer pc.</dd>
+                    </div>
+                    <div class="pergunta">
+                        <dt><button class="cor-4 font-p5-sb" aria-controls="pergunta4" aria-expanded="false">Precisa de internet para jogar esse jogo?</button></dt>
+                        <dd class="cor-4 font-p4-r" id="pergunta4">Não, esse jogo não irá precisar de internet para rodar.</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+        <a href="#" class="seta-animado fechar"><img src="./assets/imgs/icone/seta-top.svg" alt="" width="30" height="40"></a>
     </main>
     <!-- Main Content End -->
     <!-- Footer Content Start -->
-    <footer class="footer-bg" aria-label="Rodape">
+    <footer class="bg-4 fechar" aria-label="Rodape">
         <div class="footer container">
-            <span class="logo color-w">Jack The<span class="color-a3"> Jumper</span></span>
+            <img class="header-img" src="./assets/imgs/logo-marca.svg" alt="Logo marca" width="191" height="98">
             <ul class="footer-links">
-                <li><a href="https://github.com/matheuspedrosam/Jack-The-Jumper/tree/master" target="_blank" rel="external">Repositório</a></li>
-                <li><a href="https://github.com/matheuspedrosam" target="_blank" rel="external">@Matheus Pedrosa</a></li>
-                <li><a href="https://github.com/PHenrique01" target="_blank" rel="external">@Paulo Henrique</a></li>
+                <li><a href="https://github.com/matheuspedrosam/Jack-The-Jumper/tree/master" target="_blank" rel="external" class="cor-1 font-p6-m">Repositório do jogo</a></li>
+                <li><a href="https://github.com/matheuspedrosam" target="_blank" rel="external" class="cor-1 font-p6-m"><i class="bi bi-github"></i> Matheus Pedrosa</a></li>
+                <li><a href="https://github.com/PHenrique01" target="_blank" rel="external" class="cor-1 font-p6-m"><i class="bi bi-github"></i> Paulo Henrique</a></li>
             </ul>
         </div>
-        <div class="copy">
-            <span>Copyright 2024 &copy;Jack The Jumper - Todos os direitos reservados.</span>
+        <div class="copy container">
+            <span class="cor-1 font-p7-sb">Copyright 2024 &copy;Jack The Jumper - Todos os direitos reservados.</span>
         </div>
     </footer>
     <!-- Footer Content End -->

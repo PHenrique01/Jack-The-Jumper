@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap');
+
+:root{
+    --font-pixelify: "Pixelify Sans", sans-serif;
+    --font-presstart2p: "Press Start 2P", system-ui;
+    --font-poppins: "Poppins", sans-serif;
+}
+
+/* Como saber o line-height: valor_line-height / valor_font-size */
+/* Como converter o px para rem: valor_font-size / 16px */
+
+/* fonte para o links dp menu */
+
+.font-p1-m{
+    font: 500 1.12rem var(--font-poppins);
+}
+
+/* fonte para o titulo */
+
+.font-g1-sb{
+    font: 600 4rem/1.12 var(--font-poppins);
+}
+
+/* fonte para pequeno texto do header */
+
+.font-p2-r{
+    font: 400 1.25rem/1.6 var(--font-poppins);
+}
+
+/* fonte para scroll down */
+
+.font-p3-r{
+    font: 400 1rem/1.25 var(--font-poppins);
+}
+
+/* fonte para subtitulo */
+
+.font-m1-sb{
+    font: 600 2.25rem/1.11 var(--font-poppins);
+}
+
+/* fonte para texto */
+
+.font-p4-r{
+    font: 400 1.12rem/1.33 var(--font-poppins);
+}
+
+/* fonte para perguntas */
+
+.font-p5-sb{
+    font: 600 1.12rem/1.33 var(--font-poppins);
+}
+
+/* fonte para links do footer */
+
+.font-p6-m{
+    font: 500 1.12rem/2 var(--font-poppins);
+}
+
+/* fonte para copy */
+
+.font-p7-sb{
+    font: 600 1.12rem/1.77 var(--font-poppins);
+}
+
+/* Media Queries */
+
+@media (max-width: 800px){
+    .font-g1-sb{
+        font-size: 3.75rem;
+    }
+}
+
+@media (max-width: 700px){
+    .font-g1-sb{
+        font-size: 3rem;
+    }
+}

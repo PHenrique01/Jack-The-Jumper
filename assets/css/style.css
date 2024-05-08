@@ -13,5 +13,6 @@
 /* CSS - PAGES */
 
 @import url("./pages/home/introducao.css");
-@import url("./pages/home/sobre.css");
-@import url("./pages/home/perguntas.css");
+@import url("./pages/home/historia.css");
+@import url("./pages/home/personagem.css");
+@import url("./pages/home/pergunta.css");

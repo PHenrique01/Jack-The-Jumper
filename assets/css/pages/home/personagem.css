@@ -1,0 +1,44 @@
+.personagens-bg{
+    background: url("../../../imgs/bg/bg-img.jpg") bottom center no-repeat fixed;
+    background-size: cover;
+}
+
+.personagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.personagens .personagens-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-top: 80px;
+}
+
+.personagens-list .personagem{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.personagem .personagem-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.personagem .personagem-desc h4{
+    text-align: center;
+}
+
+.personagem .personagem-desc p{
+    width: 360px;
+    text-align: center;
+}
+
+/* Media Queries */

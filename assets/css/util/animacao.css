@@ -23,3 +23,39 @@
     transform: none;
     transition: transform 0.8s, opacity 0.8s;
 }
+
+.scroll-animado a img{
+    animation-name: setas-animada;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+@keyframes setas-animada{
+    from{
+        margin-top: 4%;
+    }
+
+    to{
+        margin-bottom: 4%;
+    }
+}
+
+.seta-animado img{
+    animation-name: seta-top-animada;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+@keyframes seta-top-animada{
+    from{
+        margin-bottom: 10%;
+    }
+
+    to{
+        margin-top: 10%;
+    }
+}
