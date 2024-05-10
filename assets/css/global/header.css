@@ -28,6 +28,10 @@
     color: var(--color-03);
 }
 
+.header-menuMobile{
+    display: none;
+}
+
 .header-info{
     display: flex;
     flex-direction: column;
@@ -82,4 +86,45 @@
 }
 
 @media (max-width: 600px){
+    .header{
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .header-menu{
+        background-color: var(--color-04);
+        display: none;
+        position: absolute;
+        top: 120px;
+        right: 25px;
+        padding: 8px;
+    }
+
+    .header-menu li + li{
+        padding-top: 10px;
+    }
+
+    .header-menuMobile{
+        display: block;
+    }
+    
+    .header-menuMobile i{
+        font-size: 32px;
+        color: var(--color-01);
+    }
+}
+
+@media (max-width: 500px){
+    .header-img{
+        width: 140px;
+        height: 60px;
+    }
+
+    .header-menu{
+        top: 100px;
+    }
+
+    .header-info p{
+        max-width: 380px;
+    }
 }

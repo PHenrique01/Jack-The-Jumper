@@ -61,3 +61,16 @@ a{
     bottom: 28px;
     z-index: 1;
 }
+
+@media (max-width: 500px){
+    .container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .btns .btn{
+        font-size: 1rem;
+        text-align: center;
+        padding: 5px;
+    }
+}
