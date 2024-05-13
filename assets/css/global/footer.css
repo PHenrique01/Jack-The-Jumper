@@ -9,9 +9,9 @@
 }
 
 .footer::after{
-    background-color: var(--color-01);
+    background-color: var(--color-03);
     content: "";
-    width: 1160px;
+    width: 96%;
     height: 2px;
     position: absolute;
     bottom: 8px;
@@ -41,3 +41,28 @@
 }
 
 /* Media Queries */
+
+@media (max-width: 800px){
+    .footer::after{
+        width: 94%;
+    }
+
+    .copy{
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px){
+    .footer{
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .footer .footer-links{
+        gap: 18px;
+    }
+
+    .copy{
+        text-align: center;
+    }
+}

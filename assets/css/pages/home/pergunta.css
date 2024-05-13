@@ -1,10 +1,10 @@
 .perguntas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
     padding-top: 120px;
     padding-bottom: 120px;
+}
+
+.perguntas h2{
+    text-align: center;
 }
 
 .perguntas-list{
@@ -12,7 +12,6 @@
 }
 
 .perguntas-list .pergunta{
-    width: 1160px;
     padding: 20px;
     border-radius: 5px;
 }

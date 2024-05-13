@@ -17,9 +17,9 @@
     <header class="header-bg" aria-label="Header">
         <div class="header container">
             <img class="header-img" src="./assets/imgs/logo-marca.svg" alt="Logo marca" width="191" height="98">
-            <nav aria-label="Menu">
-                <div class="header-menuMobile" onclick="btnMenuMobile()">
-                    <i class="bi bi-list"></i>
+            <nav class="header-list" aria-label="Menu">
+                <div class="header-menuMobile">
+                    <span class="hamburger"></span>
                 </div>
                 <ul class="header-menu cor-1 font-p1-m">
                     <li><a href="#historia-jogo">História do jogo</a></li>
@@ -50,7 +50,7 @@
     <!-- Header Content End -->
     <!-- Main Content Start -->
     <main id="conteudo" aria-label="Conteudo">
-        <section class="bg-4 fechar" aria-label="Introdução">
+        <section class="bg-4" aria-label="Introdução">
             <div class="introducao container">
                 <h2 class="cor-1 font-g1-sb">Jack The Jumper</h2>
                 <div class="introducao-info">
@@ -63,7 +63,7 @@
                             Jack The Jumper, é um jogo no formato 2d onde o personagem principal se chama jack e pode se mover no eixo x e y. E a cada vez que ele vai subindo a câmera irá subindo junto com ele, caso ele caia ou sofra dano do dragão, ele perde uma vida de um total de 3 vidas, e retornará de seu último checkpoint. Após perder as 3 vidas será um game over.
                             <br>
                             <br>
-                            <span class="cor-1 font-p4-r">Jack The Jumper é um projeto da faculdade.</span>
+                            Jack The Jumper é um projeto da faculdade.
                         </p>
                         <div class="btns cor-1">
                             <a href="#" target="_blank" rel="external" class="btn">Baixar jogo</a>
@@ -72,11 +72,11 @@
                     </div>
                 </div>
                 <div class="video">
-                    <iframe width="1160" height="500" src="https://www.youtube.com/embed/6d2hPhPXn8w?si=XhB9EUVQptQ0hxVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/6d2hPhPXn8w?si=XhB9EUVQptQ0hxVk"></iframe>
                 </div>
             </div>
         </section>
-        <section class="historia container fechar" id="historia-jogo" aria-label="História do jogo">
+        <section class="historia container" id="historia-jogo" aria-label="História do jogo">
             <h2 class="cor-4 font-g1-sb">História do jogo</h2>
             <div class="historia-info">
                 <div class="historia-desc">
@@ -94,8 +94,8 @@
                     </p>
                 </div>
                 <div class="historia-trailer">
-                    <div class="trailer">
-                        <iframe width="1160" height="500" src="https://www.youtube.com/embed/6d2hPhPXn8w?si=XhB9EUVQptQ0hxVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/6d2hPhPXn8w?si=XhB9EUVQptQ0hxVk"></iframe>
                     </div>
                     <div class="historia-trailer-desc">
                         <h3 class="cor-4 font-m1-sb">Sinopse</h3>
@@ -106,7 +106,7 @@
                 </div>
             </div>
         </section>
-        <section class="personagens-bg fechar" id="personagens-jogo" aria-label="Personagens do jogo">
+        <section class="personagens-bg" id="personagens-jogo" aria-label="Personagens do jogo">
             <div class="personagens container">
                 <h2 class="cor-1 font-g1-sb">Personagens do jogo</h2>
                 <div class="personagens-list">
@@ -146,7 +146,7 @@
                 </div>
             </div>
         </section>
-        <section class="perguntas container fechar" id="perguntas-jogo" aria-label="Perguntas do jogo">
+        <section class="perguntas container" id="perguntas-jogo" aria-label="Perguntas do jogo">
             <h2 class="cor-4 font-g1-sb">Dúvidas do jogo</h2>
             <div class="perguntas-list">
                 <dl>
@@ -169,13 +169,13 @@
                 </dl>
             </div>
         </section>
-        <a href="#" class="seta-animado fechar"><img src="./assets/imgs/icone/seta-top.svg" alt="" width="30" height="40"></a>
+        <a href="#" class="seta-animado"><img src="./assets/imgs/icone/seta-top.svg" alt="" width="30" height="40"></a>
     </main>
     <!-- Main Content End -->
     <!-- Footer Content Start -->
-    <footer class="bg-4 fechar" aria-label="Rodape">
+    <footer class="bg-4" aria-label="Rodape">
         <div class="footer container">
-            <img class="header-img" src="./assets/imgs/logo-marca.svg" alt="Logo marca" width="191" height="98">
+            <img class="footer-img" src="./assets/imgs/logo-marca.svg" alt="Logo marca" width="191" height="98">
             <ul class="footer-links">
                 <li><a href="https://github.com/matheuspedrosam/Jack-The-Jumper/tree/master" target="_blank" rel="external" class="cor-1 font-p6-m">Repositório do jogo</a></li>
                 <li><a href="https://github.com/matheuspedrosam" target="_blank" rel="external" class="cor-1 font-p6-m"><i class="bi bi-github"></i> Matheus Pedrosa</a></li>

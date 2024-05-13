@@ -21,12 +21,6 @@
     gap: 32px;
 }
 
-/* .historia-trailer .trailer{
-    background-color: var(--color-03);
-    width: 1160px;
-    height: 500px;
-} */
-
 .historia-trailer .historia-trailer-desc{
     display: flex;
     flex-direction: column;
@@ -34,3 +28,9 @@
 }
 
 /* Media Queries */
+
+@media (max-width: 900px){
+    .historia-info .historia-desc p{
+        text-align: center;
+    }
+}

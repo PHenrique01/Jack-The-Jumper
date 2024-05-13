@@ -72,6 +72,12 @@
 
 /* Media Queries */
 
+@media (max-width: 1500px){
+    .header-bg{
+        height: 120vh;
+    }
+}
+
 @media (max-width: 800px){
     .header{
         justify-content: center;
@@ -81,40 +87,95 @@
 
     .header-info p{
         max-width: 480px;
-        margin-top: 16px;
+        /* margin-top: 16px; */
     }
 }
 
 @media (max-width: 600px){
+    .header-bg{
+        height: 110vh;
+    }
+
     .header{
         justify-content: space-between;
         position: relative;
     }
 
-    .header-menu{
-        background-color: var(--color-04);
-        display: none;
-        position: absolute;
-        top: 120px;
-        right: 25px;
-        padding: 8px;
+    .header-list.ativar .header-menu{
+        height: auto;
+        border-radius: 4px;
+        visibility: visible;
     }
 
-    .header-menu li + li{
-        padding-top: 10px;
+    .header-menu{
+        background-color: var(--color-04);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 98px;
+        right: 10px;
+        height: 0px;
+        transition: 0.6s;
+        padding: 0px 10px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    .header-menu li{
+        padding: 4px;
     }
 
     .header-menuMobile{
-        display: block;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 52px;
+        right: 10px;
+        gap: 20px;
+        padding: 10px;
+        border-radius: 4px;
     }
-    
-    .header-menuMobile i{
-        font-size: 32px;
+
+    .header-menuMobile span{
         color: var(--color-01);
+    }
+
+    .hamburger{
+        border-top: 2px solid var(--color-03);
+    }
+
+    .hamburger::before,
+    .hamburger::after{ 
+        background-color: var(--color-03);
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    .header-list.ativar .hamburger{
+        border-top-color: transparent;
+    }
+
+    .header-list.ativar .hamburger::before{
+        transform: rotate(135deg);
+    }
+
+    .header-list.ativar .hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
     }
 }
 
 @media (max-width: 500px){
+    .header-bg{
+        height: 102vh;
+    }
+
     .header-img{
         width: 140px;
         height: 60px;
@@ -122,9 +183,15 @@
 
     .header-menu{
         top: 100px;
+        right: 15px;
     }
 
     .header-info p{
         max-width: 380px;
+    }
+
+    .header-info .btns .btn{
+        font-size: 1rem;
+        padding: 5px;
     }
 }

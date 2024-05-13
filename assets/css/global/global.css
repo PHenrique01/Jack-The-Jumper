@@ -40,6 +40,7 @@ a{
     border-radius: 50px;
     padding: 10px 20px;
     transition: 0.4s;
+    text-align: center;
 }
 
 .btns .btn:hover{
@@ -62,15 +63,42 @@ a{
     z-index: 1;
 }
 
+.video{
+    background-color: var(--color-02);
+    width: 100%;
+    border-radius: 4px;
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.video iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 800px){
+    .seta-animado{
+        width: 46px;
+        height: 46px;
+        right: 50px;
+    }
+
+    .seta-animado img{
+        height: 32px;
+    }
+}
+
 @media (max-width: 500px){
     .container{
         padding-left: 10px;
         padding-right: 10px;
     }
 
-    .btns .btn{
-        font-size: 1rem;
-        text-align: center;
-        padding: 5px;
+    .seta-animado{
+        right: 10px;
     }
 }

@@ -1,14 +1,24 @@
 // Script do menu mobile
 
-const menuMobile = document.querySelector(".header-menu")
+const menuMobile = document.querySelector(".header-menuMobile");
 
-function btnMenuMobile(){
-  if(menuMobile.style.display === "block"){
-    menuMobile.style.display = "none"
-  }else{
-    menuMobile.style.display = "block"
+function ativarMenuMobile(event) {
+  if (event.type === "touchstart") event.preventDefault();
+  const nav = document.querySelector(".header-list");
+  nav.classList.toggle("ativar");
+
+  const active = nav.classList.contains("ativar");
+  event.currentTarget.setAttribute("aria-expanded", active);
+
+  if (active) {
+    event.currentTarget.setAttribute("aria-label", "Fechar");
+  } else {
+    event.currentTarget.setAttribute("aria-label", "Abrir");
   }
 }
+
+menuMobile.addEventListener("click", ativarMenuMobile);
+menuMobile.addEventListener("touchstart", ativarMenuMobile);
 
 // Script da seção dúvidas do jogo
 const perguntas = document.querySelectorAll(".perguntas button");
