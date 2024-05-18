@@ -2,13 +2,11 @@
 
 ![Imagem do site](./assets/imgs/bg/bg-readme.png)
 
-<!-- <div style="display:flex; justify-content: center; gap:50px;">
-    <h4><a href="https://phenrique01.github.io/Jack-The-Jumper/">Clique para visitar o site</a></h4>
-    <h4><a href="https://www.figma.com/design/A3dSfxgXB3coJAzQsrpeQR/prototipo-site-jogo?node-id=0%3A1&t=9AvdTITsjMBmYgkt-1">Clique para ver o protótipo</a></h4>
-</div> -->
-
 <div align="center">
-    <h4><a href="https://phenrique01.github.io/Jack-The-Jumper/">Clique para visitar o site | </a><a href="https://www.figma.com/design/A3dSfxgXB3coJAzQsrpeQR/prototipo-site-jogo?node-id=0%3A1&t=9AvdTITsjMBmYgkt-1"> | Clique para ver o protótipo</a></h4>
+    <h4>
+    <a href="https://phenrique01.github.io/Jack-The-Jumper/">Clique para visitar o site | </a>
+    <a href="https://www.figma.com/design/A3dSfxgXB3coJAzQsrpeQR/prototipo-site-jogo?node-id=0%3A1&t=9AvdTITsjMBmYgkt-1"> | Clique para ver o protótipo</a>
+    </h4>
 </div>
 
 <h2>Seções do site 📚</h2>
