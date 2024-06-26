@@ -26,7 +26,72 @@
     gap: 40px;
 }
 
+.modal{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    overflow: auto;
+}
+
+.modal.ativo{
+    display: block;
+}
+
+.modal-conteudo{
+    background-color: var(--color-01);
+    border: 1px solid var(--color-03);
+    margin: auto;
+    padding: 20px;
+    max-width: 50%;
+}
+
+.btn-close{
+    color: var(--color-03);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.btn-close:hover, .btn-close:focus{
+    color: var(--color-04);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.instrucao-jogo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.instrucao-jogo ul li + li{
+    padding-top: 10px;
+}
+
+.download-jogo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.download-jogo a{
+    text-decoration: underline;
+}
+
 /* Media Queries */
+
+@media (min-width: 1600px){
+    .modal-conteudo{
+        max-width: 40%;
+    }
+}
 
 @media (max-width: 1100px){
     .introducao-info-img img{
@@ -57,6 +122,10 @@
     .introducao-info .introducao-desc p{
         text-align: center;
     }
+
+    .modal-conteudo{
+        max-width: 70%;
+    }
 }
 
 @media (max-width: 500px){
@@ -66,6 +135,10 @@
 
     .introducao-desc .btns{
         gap: 20px;
+    }
+
+    .modal-conteudo{
+        max-width: 80%;
     }
 }
 

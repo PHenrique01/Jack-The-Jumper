@@ -14,7 +14,7 @@ html{
     display: none !important;
 }
 
-a{
+a, button{
     color: inherit;
 }
 
@@ -41,6 +41,7 @@ a{
     padding: 10px 20px;
     transition: 0.4s;
     text-align: center;
+    cursor: pointer;
 }
 
 .btns .btn:hover{
