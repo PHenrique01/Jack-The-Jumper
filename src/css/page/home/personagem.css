@@ -1,5 +1,5 @@
 .personagens-bg{
-    background: url("../../../imgs/bg/bg-img.jpg") bottom center no-repeat fixed;
+    background: url("../../../assets/bg/bg-img.jpg") bottom center no-repeat fixed;
     background-size: cover;
 }
 
@@ -25,6 +25,10 @@
     flex-direction: column;
     align-items: center;
     gap: 32px;
+}
+
+.personagem .personagem-img img{
+    border-radius: 5px;
 }
 
 .personagem .personagem-desc{

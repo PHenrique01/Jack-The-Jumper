@@ -1,0 +1,18 @@
+/* CSS - GLOBAL */
+
+@import url("../css/global/global.css");
+@import url("../css/global/header.css");
+@import url("../css/global/footer.css");
+
+/* CSS - UTIL */
+
+@import url("../css/util/cores.css");
+@import url("../css/util/tipografia.css");
+@import url("../css/util/animacao.css");
+
+/* CSS - PAGES */
+
+@import url("../css/page/home/introducao.css");
+@import url("../css/page/home/historia.css");
+@import url("../css/page/home/personagem.css");
+@import url("../css/page/home/pergunta.css");

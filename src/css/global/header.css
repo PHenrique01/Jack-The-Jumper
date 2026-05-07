@@ -1,5 +1,5 @@
 .header-bg{
-    background: rgba(0, 0, 12, 70%) url("../../imgs/bg/Jack_The_Jumper_Main_Gif.gif") bottom center no-repeat;
+    background: rgba(0, 0, 12, 70%) url("../../assets/bg/Jack_The_Jumper_Main_Gif.gif") bottom center no-repeat;
     background-size: cover;
     background-blend-mode: darken;
     height: 100vh;
@@ -36,7 +36,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 180px;
+    margin-top: 120px;
 }
 
 .header-info p{
