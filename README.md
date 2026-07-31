@@ -1,6 +1,6 @@
 <h1 align="center">Jack The Jumper 🎮</h1>
 
-![Imagem do site](./assets/imgs/bg/bg-readme.png)
+<img width="1440" height="800" alt="Image" src="https://github.com/user-attachments/assets/edc72bbc-df3c-42bd-974f-ae4afa67ce2a" />
 
 <div align="center">
     <h4>
