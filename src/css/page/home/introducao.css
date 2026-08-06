@@ -27,36 +27,48 @@
 }
 
 .modal{
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-    padding-top: 100px;
     position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1;
-    overflow: auto;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.75);
+    backdrop-filter: blur(6px);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    z-index: 9999;
+}
+
+body.modal-aberto{
+    overflow: hidden;
 }
 
 .modal.ativo{
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 .modal-conteudo{
     background-color: var(--color-01);
     border: 1px solid var(--color-03);
-    border-radius: 5px;
-    margin: auto;
+    border-radius: 16px;
     padding: 20px;
     max-width: 50%;
 }
 
 .btn-close{
+    background: var(--color-04);
     color: var(--color-03);
     float: right;
     font-size: 28px;
     font-weight: bold;
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    transition:.3s;
 }
 
 .btn-close:hover, .btn-close:focus{
@@ -73,7 +85,7 @@
 }
 
 .instrucao-jogo ul li + li{
-    padding-top: 10px;
+    padding-top: 24px;
 }
 
 .download-jogo{
@@ -135,6 +147,8 @@
     }
 
     .introducao-desc .btns{
+        flex-direction: column;
+        width: 100%;
         gap: 20px;
     }
 
